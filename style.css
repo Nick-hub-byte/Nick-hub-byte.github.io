@@ -1,0 +1,85 @@
+body{
+    background: #374fbd;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container{
+    text-align: center;
+    margin: 15px;
+    display: grid;
+    height: 100%;
+    grid-gap: 2.5px 2.5px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 
+                    repeat(10, 280px) 
+
+}
+
+img {
+    height: 190px;
+    width: 350;
+}
+
+p {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+button{
+    margin: 5px;
+    font-size: 14;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        text-align: center;
+        display: grid;
+        height: 100%;
+        grid-gap: 2px 2px;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: repeat(15, 270px) 
+    }
+    img {
+        height: 180px;
+        width: 340;
+    }
+    
+    p {
+        font-size: 2vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        text-align: center;
+        display: grid;
+        height: 100%;
+        grid-gap: 2px 2px;
+        grid-template-columns: 98%;
+        grid-template-rows: repeat(30, 270px) 
+    }
+    img {
+        height: 180px;
+        width: 340;
+    }
+    
+    p {
+        font-size: 5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
